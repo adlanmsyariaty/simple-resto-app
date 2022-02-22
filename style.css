@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fae8ff;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.2rem;
+  margin-bottom: -3rem;
+}
+
+header {
+  /* min-height: 20vh; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+button:focus {
+  border: none;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.menu-box {
+  width: 60%;
+  background-color: white;
+  margin-top: 20px;
+  /* padding: 15px; */
+  border-radius: 10px;
+}
+
+.menu-list {
+  min-width: 40%;
+  list-style: none;
+  /* padding-bottom: 2rem; */
+  transition: all 0.5s ease;
+}
+
+.menu {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease;
+}
+.menu-item {
+  /* margin-right: 0.4rem; */
+  padding: 0rem 0.5rem;
+}
+
+.menu li {
+  flex: 1;
+}
+
+.delete-btn,
+.cheap-btn {
+  color: #84cc16;
+  background-color: #ecfccb;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  font-weight: bold;
+}
+
+.standard-btn {
+  color: #06b6d4;
+  background-color: #cffafe;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  font-weight: bold;
+}
+
+.expensive-btn {
+  color: #ec4899;
+  background-color: #fce7f3;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  font-weight: bold;
+}
+
+.remove {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.statistic {
+  margin-top: 1.4rem;
+  line-height: 2rem;
+  width: 60%;
+}
+
+.statistic h2 {
+  color: rgb(107, 114, 128);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.statistic-container {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.statistic-box {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.statistic-box p {
+  color: rgb(107, 114, 128);
+  font-size: 0.75rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+.statistic-box .number {
+  color: rgb(17, 24, 39);
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+}
+
+.menu-box h2 {
+  color: rgb(107, 114, 128);
+  line-height: 2.25rem;
+  margin: 0.2rem 1rem;
+  padding: 0rem 0.5rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
