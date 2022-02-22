@@ -1,114 +1,162 @@
 * {
-    font-family: 'Mulish', sans-serif;
-    margin-top: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #fce7f3;
+  background-color: #fae8ff;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
 }
 
-h1 {
-    text-align: center;
-    font-size: 27.5px;
+header {
+  font-size: 1.2rem;
+  margin-bottom: -3rem;
 }
 
-h2 {
-    font-size: 12.5px;
-    color: rgb(155, 155, 155);
-    margin-bottom: 5px;
-    margin-left: 22.5px;
-    margin-right: 22.5px;
+header {
+  /* min-height: 20vh; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
 }
 
-.container {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 15px;
-    padding-right: 15px;
+button:focus {
+  border: none;
 }
 
-.box-statistic {
-    background-color: white;
-    color: rgb(155, 155, 155);
-    height: 45px;
-    width: 100%;
-    font-size: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-    float: left;
-    margin: 7.5px;
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
 }
 
-.sum {
-    background-color: white;
-    font-size: 20px;
-    color: black;
-    font-weight: bold;
-}
-
-.container-list {
-    background-color: white;
-    margin-left: 22.5px;
-    font-size: 12.5px;
-    color: rgb(155, 155, 155);
-    margin-bottom: 5px;
-    margin-right: 22.5px;
-    margin-top: 7.5px;
-    border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+.menu-box {
+  width: 60%;
+  background-color: white;
+  margin-top: 20px;
+  /* padding: 15px; */
+  border-radius: 10px;
 }
 
 .menu-list {
-    background-color: white;
-    font-size: 12.5px;
-}
-
-.container-menu {
-    width: 100%;
-    display: flex;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    justify-content: space-between;
-    background-color: white;
+  min-width: 40%;
+  list-style: none;
+  /* padding-bottom: 2rem; */
+  transition: all 0.5s ease;
 }
 
 .menu {
-    margin: 0;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease;
+}
+.menu-item {
+  /* margin-right: 0.4rem; */
+  padding: 0rem 0.5rem;
 }
 
-.status {
-    margin: 0;
-    padding: 7.5px;
-    font-weight: bold;
-    font-size: 10px;
-    border-radius: 5px;
-    justify-content: center;
+.menu li {
+  flex: 1;
 }
 
-#Standard {
-    color: #06b6d4;
-    background-color: #cffafe;
+.delete-btn,
+.cheap-btn {
+  color: #84cc16;
+  background-color: #ecfccb;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  font-weight: bold;
 }
 
-#Cheap {
-    color: #84cc16;
-    background-color: #ecfccb;
+.standard-btn {
+  color: #06b6d4;
+  background-color: #cffafe;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  font-weight: bold;
 }
 
-#Expensive {
-    color: #ec4899;
-    background-color: #fce7f3;
+.expensive-btn {
+  color: #ec4899;
+  background-color: #fce7f3;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+  font-weight: bold;
+}
+
+.remove {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.statistic {
+  margin-top: 1.4rem;
+  line-height: 2rem;
+  width: 60%;
+}
+
+.statistic h2 {
+  color: rgb(107, 114, 128);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.statistic-container {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.statistic-box {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.statistic-box p {
+  color: rgb(107, 114, 128);
+  font-size: 0.75rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+.statistic-box .number {
+  color: rgb(17, 24, 39);
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+}
+
+.menu-box h2 {
+  color: rgb(107, 114, 128);
+  line-height: 2.25rem;
+  margin: 0.2rem 1rem;
+  padding: 0rem 0.5rem;
+  font-weight: 500;
+  font-size: 1.125rem;
 }

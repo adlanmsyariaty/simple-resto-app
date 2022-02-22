@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Applicaton</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Hacktiv8 Restaurant</title>
 </head>
+
 <body>
-    <h1>Hacktiv8 Restaurant</h1>
-    <h2>Menu statistic</h2>
-    <div id="statistic" class="container">
-        <!-- <div class="box-statistic">Expensive<p id="xpn" class="sum"></p></div> -->
-        <!-- <div class="box-statistic">Standard<p id="std" class="sum"></p></div> -->
-        <!-- <div class="box-statistic">Cheap<p id="chp" class="sum"></p></div> -->
+  <div class="menu-container">
+    <div>
+      <h1>Hacktiv8 Restaurant</h1>
     </div>
-    <div id="menu" class="container-list">
-        <h3 class="menu-list">Menu List</h3>
+    <div class="statistic">
+      <h2>Menu statistic</h2>
+      <div class="statistic-container">
+        <div class="statistic-box">
+          <p>Expensive</p>
+          <p class="number" id="expensiveCount">1</p>
+        </div>
+        <div class="statistic-box">
+          <p>Standard</p>
+          <p class="number" id="standardCount">1</p>
+        </div>
+        <div class="statistic-box">
+          <p>Cheap</p>
+          <p class="number" id="cheapCount">1</p>
+        </div>
+      </div>
     </div>
-    <script type="text/javascript" src="restaurant.js"></script>
+    <div class="menu-box">
+      <h2>Menu List</h2>
+
+      <ul class="menu-list"></ul>
+    </div>
+  </div>
+  <script src="index.js"></script>
 </body>
+
 </html>
